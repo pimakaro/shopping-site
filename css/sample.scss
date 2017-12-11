@@ -110,16 +110,17 @@ header{
         display: flex;
         justify-content: space-between;
         p{
-            padding: 5px 25px;
+            padding: 10px 45px;
             color: white;
             font-weight: bold;
             @include fontsize(15);
             background-color: $color1;
+            margin: 10px 0 0 0;
         }
     }
     //products
     #products_list{
-        padding: 25px;
+        padding: 50px;
         background-color: white;
         margin-top: 15px;
         .listname{
@@ -128,8 +129,8 @@ header{
             border-bottom: 1px $color1 solid;
             margin: 15px 0;
             h3{
-                @include fontsize(15);
-                font-weight: bold;
+                @include fontsize(13);
+                font-weight: 900;
                 letter-spacing: 2px;
             }
             p{
@@ -139,22 +140,24 @@ header{
     }
     #img_list_img{
         display: flex;
-        float: left;
-        margin: 2px;
+        //float: left;
+        width: 100%;
+        margin: 0;
             #display_img{
                 width: 80%;
                 img {
-                    
+                    width:100%;
+                    padding: 2px 10px 10px 0;
                 }
             }
             #list_img{
-                width: 35%;
+                width: 33.9%;
                 float: left;
                 margin-left: 5px;
                 li {
                     padding: 0;
                     margin: 0 2px;
-                    width: 45%;
+                    width: 44%;
                     list-style: none;
                     display: inline-block;
                   img{
@@ -184,21 +187,24 @@ header{
             width: 100% ;
             .box{
                 display: inline-block;
-                padding: 2.7%;
+                padding: 2%;
                 //float: left;
-                margin: 0.3%;
+                margin: 0.1%;
                 background-color: white;
                 //margin-right: 10px;
-                width: 26% ;
+                width: 28.7% ;
                 p{
-                    margin: 0;
+                    margin: 0 0 10px 0;
                     padding: 0;
+                    font-weight: 600;
+                    @include fontsize(12);
                 }
             } 
         }
     }//new
     #content_popular_list{
         .pc_list_title{
+            display: block;
             margin: 10px 0;
             padding-top: 10px;
         }
@@ -216,15 +222,17 @@ header{
             width: 100% ;
             .box{
                 display: inline-block;
-                padding: 2.7%;
+                padding: 2%;
                 //float: left;
-                margin: 0.3%;
+                margin: 0.1%;
                 //margin-right: 10px;
-                width: 26% ;
+                width: 28.7% ;
                 background-color: white;
                 p{
-                    margin: 0;
+                    margin: 0 0 10px 0;
                     padding: 0;
+                    font-weight: 600;
+                    @include fontsize(12)
                 }
             } 
         }    
@@ -263,13 +271,17 @@ header{
                 display: flex;
                 margin-left: 40px;
                 h3{
-                    color: $color4;
-                    @include fontsize(20);
+                    color: rgb(234,030,111);
+                    @include fontsize(25);
                     margin: auto 0;
+                    margin-left: 40px;
+                    font-weight: 600;
+                    font-style: italic;
                 }
                 p{
-                    @include fontsize(12);
+                    @include fontsize(14);
                     margin: 28px 20px 15px 0;
+                    font-style: italic;
                 }
             }
         }
@@ -289,7 +301,7 @@ header{
     .shoplist{
         .list_top{
             @include fontsize(14);
-            color: $color3;
+            color: rgb(136,127,105);
             border-bottom: 1px $color1 solid;
             padding: 10px 0;
             margin-top: 10px;
@@ -299,11 +311,15 @@ header{
             margin-top: 10px;
             h3{
                 @include fontsize(14);
-                color: $color3;
+                color: rgb(136,127,105);
                 font-weight: bold;
                 &:before{
                          content: "■";
                       }
+            }
+            p{
+                @include fontsize(12);
+                font-weight: 600;
             }
         }
         .list_sub{
@@ -318,12 +334,14 @@ header{
             }
             .main{
                 border-style: none;
-                @include fontsize(10);
+                @include fontsize(11);
                 color: $color1;
             }
         }
         p{
-            color: block;
+            color: black;
+            @include fontsize(10);
+            font-weight: 500;
         }
       
     }
@@ -349,46 +367,54 @@ header{
                 }
                 .box-1{
                     background-color: white;
-                    margin: 1.5%;
+                    margin: 0.2%;
                     padding: 10px;
                     flex: 1;
                     .guide_title{
-                       @include fontsize(16);
+                       @include fontsize(14);
                        font-weight: bold;
                        margin-bottom: 5px;
                     }
                     h3{
+                        font-weight: bold;
+                        margin: 5px 0;
                         color: $color1;
-                        @include fontsize(10);
+                        @include fontsize(12);
                       &:before{
                          content: "■";
                       }
                     }
                     p{
-                        @include fontsize(10);
+                        @include fontsize(12);
+                        margin: 0 0 10px 0;
                         //line-height: 2px;
+                        font-weight: bold;
                     }
                 }
                 .box-2{
-                    background-color: white;
-                    margin: 1.5%;
+                    background-color: white;            
+                    margin: 0.2%;
                     padding: 10px;
                     flex: 1;
                     .guide_title{
-                       @include fontsize(16);
+                       @include fontsize(14);
                        font-weight: bold;
                        margin-bottom: 5px;
                     }
                     h3{
+                        font-weight: bold;
                         color: $color1;
-                        @include fontsize(10);
+                        @include fontsize(12);
+                        margin: 10px 0 10px 0;
                       &:before{
                          content: "■";
                       }
                     }
                     p{
-                        @include fontsize(10);
-                        line-height: 2px;
+                        margin: 5px 0 10px 0;
+                        @include fontsize(12);
+                        line-height: 5px;
+                        font-weight: bold;
                     }
                 }
             }//.guide
@@ -446,14 +472,15 @@ header{
                 background-color: white;
                 padding: 10px;
                 margin-bottom: 5px;
-                @include fontsize(10);
+                @include fontsize(12);
                 background-image: url("../images/top/next_icon_gray.png");
                 background-repeat: no-repeat;
                 background-position: right 10px center ;
                 // background-position: 95% center ;
                 a{
                     text-decoration: none;
-                    color: $color1;
+                    color: black;
+                    font-weight: bold;
                 }
             }
         }
@@ -468,6 +495,10 @@ header{
             margin: 0;
             padding: 10px;
             background-color: white;
+            .content_about{
+                font-weight: 600;
+                @include fontsize(12)
+            }
         }
     }
     #shopping_info{
@@ -480,6 +511,10 @@ header{
             background-color: white;
             padding: 10px;
             margin: 0;
+            .content_info{
+                @include fontsize(12);
+                font-weight: 600;
+            }
         }
     }
     .more{
@@ -499,6 +534,7 @@ footer{
         text-align: center;
         p{
             margin: 0;
+            @include fontsize(11);
         }
     }
     .copy{
@@ -514,6 +550,13 @@ footer{
 @media (max-width: 640px){
     body{
         @include fontsize(18);
+    }
+    .cover_area{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        padding: 0 10px;
     }
     header{
         #header_in{
@@ -563,6 +606,9 @@ footer{
     #cover_area{
         #list_top{
             margin: 0 10px;
+            p{
+                @include fontsize(10);
+            }
         }
         #list_top_pictar{
             .pc_top_pictar{
@@ -576,6 +622,8 @@ footer{
             flex-direction: column;
             h3{
                 margin-bottom: 5px;
+                @include fontsize(15);
+                letter-spacing: 0;
             }
             p{
                 
@@ -589,6 +637,7 @@ footer{
                 width: 100%;
                 img {
                     width: 100%;
+                    padding: 2px;
                 }
             }
             #list_img{
@@ -608,13 +657,15 @@ footer{
             }
         }
         #products_list{
+            padding: 10px;
+            margin: 0 -10px;
             .listname{
                 h3{
-                    @include fontsize(25);
-                    letter-spacing: 5px;
+                    @include fontsize(13);
+                    letter-spacing: 0px;
                 }
                 p{
-                    @include fontsize(18);
+                    @include fontsize(11);
                 }
             }
         }
@@ -623,7 +674,7 @@ footer{
                 margin-right: 0;
                 width: 100%;
                 img{
-                    margin-right: 120px;
+                    margin-right: 50px;
                 }
                 div{
                     display: flex;
@@ -663,7 +714,7 @@ footer{
         .shoplist{
             .list_top{
                 @include fontsize(22);
-                color: $color1;
+                //color: $color3;
                 border-bottom: 1px $color1 solid;
                 padding: 10px 0;
                 margin-top: 10px;
@@ -671,9 +722,12 @@ footer{
             }
             .list_main{
                 margin-top: 10px;
+                h2{
+                    @include fontsize(18);
+                }
                 h3{
-                    @include fontsize(22);
-                    color: $color1;
+                    @include fontsize(18);
+                    //color: rgb(136,127,105);
                     &:before{
                              content: "■";
                           }
@@ -688,11 +742,14 @@ footer{
                     text-align: center;
                     border-style: none;
                     color: $color1;
+                    @include fontsize(11);
+                    vertical-align: none;
                 }
                 .main{
                     border-style: none;
-                    @include fontsize(14);
+                    @include fontsize(8);
                     color: $color1;
+                    padding: 10px;
                 }
             }
             p{
@@ -704,8 +761,16 @@ footer{
                 .box{
                     //margin-right: 10px;
                     width: 43% ;
-                    @include fontsize(13)
+                    @include fontsize(13);
                 } 
+            }
+        }
+        .color_size{
+            #color{
+                .color{
+                    padding: 10px;
+                    @include fontsize(12);
+                }
             }
         }
         #content_popular_list{
@@ -724,7 +789,7 @@ footer{
                 .box{
                     //margin-right: 10px;
                     width: 43% ;
-                    @include fontsize(15)
+                    @include fontsize(15);
                 } 
             }    
         }
@@ -743,7 +808,7 @@ footer{
                     display: flex;
                     flex-direction: column;
                     .box-1{
-                        padding: 10px;
+                        padding: 20px;
                         margin: 0.3%;
                         background-color: white;
                         flex: 1;
@@ -754,7 +819,8 @@ footer{
                             @include fontsize(15);
                         }
                         p{
-                            @include fontsize(15);
+                            @include fontsize(13);
+                            font-weight: none;
                         }
                     }
                     .box-2{
@@ -768,7 +834,8 @@ footer{
                             @include fontsize(15);
                         }
                         p{
-                            @include fontsize(15);
+                            @include fontsize(13);
+                            font-weight: none;
                         }
                     }
                 }
@@ -777,7 +844,8 @@ footer{
         #categoris{
             .list-cate{
                 li{
-                    @include fontsize(15)
+                    @include fontsize(12);
+                    font-weight: 500;
                 }
             }
         }
@@ -794,7 +862,8 @@ footer{
                     padding: 0;
                     margin: 10px;
                     width: 50%;
-                    @include fontsize(15)
+                    @include fontsize(12);
+                    font-weight: 500;
                 }
             }
         }
@@ -811,7 +880,8 @@ footer{
                     padding: 0;
                     margin: 10px;
                     width: 50%;
-                    @include fontsize(15)
+                    @include fontsize(12);
+                    font-weight: 500;
                 }
             }
         }
