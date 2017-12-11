@@ -130,7 +130,7 @@ header{
             margin: 15px 0;
             h3{
                 @include fontsize(13);
-                font-weight: 900;
+                font-weight: bold;
                 letter-spacing: 2px;
             }
             p{
@@ -196,7 +196,6 @@ header{
                 p{
                     margin: 0 0 10px 0;
                     padding: 0;
-                    font-weight: 600;
                     @include fontsize(12);
                 }
             } 
@@ -231,7 +230,6 @@ header{
                 p{
                     margin: 0 0 10px 0;
                     padding: 0;
-                    font-weight: 600;
                     @include fontsize(12)
                 }
             } 
@@ -242,12 +240,18 @@ header{
         border-top: 1px $color2 solid;
         padding-top: 10px;
         #color{
+            width: 100%;
             .color{
                 width: 33.33%;
                 background-color: rgb(249,249,245);
                 text-align: center;
-                border-style: none;
                 color: $color1;
+            }
+            th{
+                border: 1px white solid;
+            }
+            td{
+                border: 1px white solid;
             }
         }
     }
@@ -319,29 +323,29 @@ header{
             }
             p{
                 @include fontsize(12);
-                font-weight: 600;
             }
         }
         .list_sub{
             border-style: none;
             .color{
                 background-color: $colorba;
-                padding: auto;
-                width: 30%;
+                padding: 10px 25px;
+                //width: 30%;
                 text-align: center;
-                border-style: none;
                 color: $color1;
+                border: 1px white solid;
             }
             .main{
                 border-style: none;
                 @include fontsize(11);
                 color: $color1;
+                border: 1px white solid;
+                padding: 5px 10px;
             }
         }
         p{
             color: black;
             @include fontsize(10);
-            font-weight: 500;
         }
       
     }
@@ -376,7 +380,7 @@ header{
                        margin-bottom: 5px;
                     }
                     h3{
-                        font-weight: bold;
+                       // font-weight: bold;
                         margin: 5px 0;
                         color: $color1;
                         @include fontsize(12);
@@ -388,7 +392,6 @@ header{
                         @include fontsize(12);
                         margin: 0 0 10px 0;
                         //line-height: 2px;
-                        font-weight: bold;
                     }
                 }
                 .box-2{
@@ -402,7 +405,7 @@ header{
                        margin-bottom: 5px;
                     }
                     h3{
-                        font-weight: bold;
+                        //font-weight: bold;
                         color: $color1;
                         @include fontsize(12);
                         margin: 10px 0 10px 0;
@@ -414,7 +417,6 @@ header{
                         margin: 5px 0 10px 0;
                         @include fontsize(12);
                         line-height: 5px;
-                        font-weight: bold;
                     }
                 }
             }//.guide
@@ -480,7 +482,6 @@ header{
                 a{
                     text-decoration: none;
                     color: black;
-                    font-weight: bold;
                 }
             }
         }
@@ -496,7 +497,6 @@ header{
             padding: 10px;
             background-color: white;
             .content_about{
-                font-weight: 600;
                 @include fontsize(12)
             }
         }
@@ -513,7 +513,6 @@ header{
             margin: 0;
             .content_info{
                 @include fontsize(12);
-                font-weight: 600;
             }
         }
     }
@@ -605,7 +604,6 @@ footer{
     }//header
     #cover_area{
         #list_top{
-            margin: 0 10px;
             p{
                 @include fontsize(10);
             }
@@ -737,10 +735,9 @@ footer{
                 border-style: none;
                 .color{
                     background-color: $colorba;
-                    padding: auto;
-                    width: 30%;
-                    text-align: center;
-                    border-style: none;
+                    padding: 10px 25px;
+                    //width: 30%;
+                    //text-align: center;
                     color: $color1;
                     @include fontsize(11);
                     vertical-align: none;
@@ -749,7 +746,7 @@ footer{
                     border-style: none;
                     @include fontsize(8);
                     color: $color1;
-                    padding: 10px;
+                    padding: 5px 10px;
                 }
             }
             p{
@@ -760,7 +757,7 @@ footer{
             .item{
                 .box{
                     //margin-right: 10px;
-                    width: 43% ;
+                    width: 45% ;
                     @include fontsize(13);
                 } 
             }
@@ -788,7 +785,7 @@ footer{
             .item{
                 .box{
                     //margin-right: 10px;
-                    width: 43% ;
+                    width: 45% ;
                     @include fontsize(15);
                 } 
             }    
@@ -820,7 +817,6 @@ footer{
                         }
                         p{
                             @include fontsize(13);
-                            font-weight: none;
                         }
                     }
                     .box-2{
@@ -835,7 +831,6 @@ footer{
                         }
                         p{
                             @include fontsize(13);
-                            font-weight: none;
                         }
                     }
                 }
@@ -845,7 +840,6 @@ footer{
             .list-cate{
                 li{
                     @include fontsize(12);
-                    font-weight: 500;
                 }
             }
         }
@@ -863,7 +857,6 @@ footer{
                     margin: 10px;
                     width: 50%;
                     @include fontsize(12);
-                    font-weight: 500;
                 }
             }
         }
@@ -881,7 +874,6 @@ footer{
                     margin: 10px;
                     width: 50%;
                     @include fontsize(12);
-                    font-weight: 500;
                 }
             }
         }

@@ -87,7 +87,7 @@ header {
     #cover_area #products_list .listname h3 {
       font-size: 13px;
       font-size: 1.3rem;
-      font-weight: 900;
+      font-weight: bold;
       letter-spacing: 2px; }
     #cover_area #products_list .listname p {
       color: #b0b0b0; }
@@ -131,7 +131,6 @@ header {
       #cover_area .new-wrapper .item .box p {
         margin: 0 0 10px 0;
         padding: 0;
-        font-weight: 600;
         font-size: 12px;
         font-size: 1.2rem; }
 #cover_area #content_popular_list .pc_list_title {
@@ -154,18 +153,22 @@ header {
       #cover_area .popular-wrapper .item .box p {
         margin: 0 0 10px 0;
         padding: 0;
-        font-weight: 600;
         font-size: 12px;
         font-size: 1.2rem; }
 #cover_area .color_size {
   border-top: 1px #e2ddd4 solid;
   padding-top: 10px; }
-  #cover_area .color_size #color .color {
-    width: 33.33%;
-    background-color: #f9f9f5;
-    text-align: center;
-    border-style: none;
-    color: #887f69; }
+  #cover_area .color_size #color {
+    width: 100%; }
+    #cover_area .color_size #color .color {
+      width: 33.33%;
+      background-color: #f9f9f5;
+      text-align: center;
+      color: #887f69; }
+    #cover_area .color_size #color th {
+      border: 1px white solid; }
+    #cover_area .color_size #color td {
+      border: 1px white solid; }
 #cover_area .cart {
   width: 100%;
   display: flex;
@@ -224,27 +227,26 @@ header {
       content: "■"; }
   #cover_area .shoplist .list_main p {
     font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 600; }
+    font-size: 1.2rem; }
 #cover_area .shoplist .list_sub {
   border-style: none; }
   #cover_area .shoplist .list_sub .color {
     background-color: #f9f8f6;
-    padding: auto;
-    width: 30%;
+    padding: 10px 25px;
     text-align: center;
-    border-style: none;
-    color: #887f69; }
+    color: #887f69;
+    border: 1px white solid; }
   #cover_area .shoplist .list_sub .main {
     border-style: none;
     font-size: 11px;
     font-size: 1.1rem;
-    color: #887f69; }
+    color: #887f69;
+    border: 1px white solid;
+    padding: 5px 10px; }
 #cover_area .shoplist p {
   color: black;
   font-size: 10px;
-  font-size: 1rem;
-  font-weight: 500; }
+  font-size: 1rem; }
 #cover_area #guide .pc_list_title {
   margin: 10px 0;
   padding-top: 10px; }
@@ -268,7 +270,6 @@ header {
         font-weight: bold;
         margin-bottom: 5px; }
       #cover_area #guide .guide_wrapper .guide .box-1 h3 {
-        font-weight: bold;
         margin: 5px 0;
         color: #887f69;
         font-size: 12px;
@@ -278,8 +279,7 @@ header {
       #cover_area #guide .guide_wrapper .guide .box-1 p {
         font-size: 12px;
         font-size: 1.2rem;
-        margin: 0 0 10px 0;
-        font-weight: bold; }
+        margin: 0 0 10px 0; }
     #cover_area #guide .guide_wrapper .guide .box-2 {
       background-color: white;
       margin: 0.2%;
@@ -291,7 +291,6 @@ header {
         font-weight: bold;
         margin-bottom: 5px; }
       #cover_area #guide .guide_wrapper .guide .box-2 h3 {
-        font-weight: bold;
         color: #887f69;
         font-size: 12px;
         font-size: 1.2rem;
@@ -302,8 +301,7 @@ header {
         margin: 5px 0 10px 0;
         font-size: 12px;
         font-size: 1.2rem;
-        line-height: 5px;
-        font-weight: bold; }
+        line-height: 5px; }
 #cover_area .item_seach {
   padding: 20px;
   background-color: white; }
@@ -353,8 +351,7 @@ header {
     background-position: right 10px center; }
     #cover_area #categoris .list-cate li a {
       text-decoration: none;
-      color: black;
-      font-weight: bold; }
+      color: black; }
 #cover_area #about #menu-about {
   background-color: #887f69;
   margin: 10px 0 0 0;
@@ -364,7 +361,6 @@ header {
   padding: 10px;
   background-color: white; }
   #cover_area #about .con_about .content_about {
-    font-weight: 600;
     font-size: 12px;
     font-size: 1.2rem; }
 #cover_area #shopping_info #menu-shop {
@@ -377,8 +373,7 @@ header {
   margin: 0; }
   #cover_area #shopping_info .con_info .content_info {
     font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 600; }
+    font-size: 1.2rem; }
 #cover_area .more {
   text-align: center; }
 
@@ -450,11 +445,9 @@ footer .copy {
           font-size: 1.5rem;
           text-decoration: none; }
 
-  #cover_area #list_top {
-    margin: 0 10px; }
-    #cover_area #list_top p {
-      font-size: 10px;
-      font-size: 1rem; }
+  #cover_area #list_top p {
+    font-size: 10px;
+    font-size: 1rem; }
   #cover_area #list_top_pictar .pc_top_pictar {
     display: none; }
   #cover_area #list_top_pictar .sp_top_pictar {
@@ -548,10 +541,7 @@ footer .copy {
     border-style: none; }
     #cover_area .shoplist .list_sub .color {
       background-color: #f9f8f6;
-      padding: auto;
-      width: 30%;
-      text-align: center;
-      border-style: none;
+      padding: 10px 25px;
       color: #887f69;
       font-size: 11px;
       font-size: 1.1rem;
@@ -561,11 +551,11 @@ footer .copy {
       font-size: 8px;
       font-size: 0.8rem;
       color: #887f69;
-      padding: 10px; }
+      padding: 5px 10px; }
   #cover_area .shoplist p {
     color: block; }
   #cover_area .new-wrapper .item .box {
-    width: 43%;
+    width: 45%;
     font-size: 13px;
     font-size: 1.3rem; }
   #cover_area .color_size #color .color {
@@ -580,7 +570,7 @@ footer .copy {
     margin: 10px 0;
     padding: 10px 0; }
   #cover_area .popular-wrapper .item .box {
-    width: 43%;
+    width: 45%;
     font-size: 15px;
     font-size: 1.5rem; }
   #cover_area #guide .pc_list_title {
@@ -606,8 +596,7 @@ footer .copy {
         font-size: 1.5rem; }
       #cover_area #guide .guide_wrapper .guide .box-1 p {
         font-size: 13px;
-        font-size: 1.3rem;
-        font-weight: none; }
+        font-size: 1.3rem; }
     #cover_area #guide .guide_wrapper .guide .box-2 {
       padding: 10px;
       margin: 0.3%;
@@ -620,12 +609,10 @@ footer .copy {
         font-size: 1.5rem; }
       #cover_area #guide .guide_wrapper .guide .box-2 p {
         font-size: 13px;
-        font-size: 1.3rem;
-        font-weight: none; }
+        font-size: 1.3rem; }
   #cover_area #categoris .list-cate li {
     font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 500; }
+    font-size: 1.2rem; }
   #cover_area #about .con_about {
     display: flex;
     flex: 1; }
@@ -638,8 +625,7 @@ footer .copy {
       margin: 10px;
       width: 50%;
       font-size: 12px;
-      font-size: 1.2rem;
-      font-weight: 500; }
+      font-size: 1.2rem; }
   #cover_area #shopping_info .con_info {
     display: flex;
     flex: 1; }
@@ -652,8 +638,7 @@ footer .copy {
       margin: 10px;
       width: 50%;
       font-size: 12px;
-      font-size: 1.2rem;
-      font-weight: 500; }
+      font-size: 1.2rem; }
 
   footer #page_top {
     padding: 20px 0;
